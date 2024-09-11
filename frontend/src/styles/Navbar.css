@@ -1,0 +1,51 @@
+/* Base styles for Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.all-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.all-links a, .logout-button {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.all-links a:hover, .logout-button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: none; 
+  }
+
+  .all-links {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .logout-button {
+    margin-top: 0.5rem;
+  }
+}
